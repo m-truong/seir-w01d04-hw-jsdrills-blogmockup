@@ -20,10 +20,17 @@ const checkPalindrome = (word) => {
     }
 };
 // console.log(checkPalindrome("Radar")); 
-console.log(checkPalindrome("Borscht"));
+// console.log(checkPalindrome("Borscht"));
 
 // Sum Array
-
+const sumArray = (arr) => {
+    let sum = 0; 
+    for (let k = 0 ; k < arr.length ; k++) {
+        sum += arr[k]; 
+    }
+    return sum; 
+};
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // Prime Numbers
 
