@@ -11,9 +11,8 @@ const checkPalindrome = (word) => {
     let wordLower = word.toLowerCase(); 
     let splitString = wordLower.split(""); 
     let reverseArray = splitString.reverse(); 
-    let joinString = reverseArray.join("");
-    let reverseWord = joinString;
-    if (joinString === wordLower ) {
+    let joinWord = reverseArray.join("");
+    if (joinWord === wordLower ) {
         return true;
     } else {
         return false;
@@ -30,10 +29,23 @@ const sumArray = (arr) => {
     }
     return sum; 
 };
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // Prime Numbers
+// Step One
+const checkPrime = (n) => {
+    let squareN = Math.sqrt(n);
+    // console.log(squareN); 
 
+    for (let k = 1 ; k <= squareN ; k ++) {
+        if ( (n % k) !== 0  ) {
+            return false;
+        } 
+    }
+    return true; 
+};
+
+// console.log(checkPrime(25)); 
 
 
 // Rock Paper Scissors 
