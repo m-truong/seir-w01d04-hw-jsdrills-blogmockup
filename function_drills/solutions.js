@@ -49,3 +49,23 @@ const checkPrime = (n) => {
 
 
 // Rock Paper Scissors 
+
+const randomMove = () => {
+    const moves = ["rock", "paper", "scissors"]; 
+    let rand = (Math.floor(Math.random() * moves.length)); 
+    return moves[rand];
+};
+// console.log(randomMove()); 
+
+let computersMove = randomMove();
+
+let usersMove = randomMove();
+
+const rockPaperScissors = (computersMove, usersMove) => {
+    if (computersMove === "rock" && usersMove === "paper") {
+        console.log("computer chose rock");
+        console.log("user chose paper");
+        console.log("paper beats rock, user wins!");
+    }
+    return;
+};
