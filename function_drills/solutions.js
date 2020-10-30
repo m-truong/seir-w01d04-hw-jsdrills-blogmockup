@@ -33,6 +33,9 @@ const sumArray = (arr) => {
 
 // Prime Numbers
 // Step One
+/* I couldn't figure out the conditional statement required to compare 
+whether the passed-in number is only evenly divisible by 1 AND itself. 
+*/
 const checkPrime = (n) => {
     let squareN = Math.sqrt(n);
     // console.log(squareN); 
@@ -49,7 +52,12 @@ const checkPrime = (n) => {
 
 
 // Rock Paper Scissors 
-
+/* I couldn't figure out the rest of the chained if-else conditions to compare 
+ every possible winning situation of the computer vs. user moves possibilities 
+ in the rockPaperScissors() function, but I have a very good understanding of the
+ logic that would've been required to complete the problem.
+ I had to move on to the Array Methods & Callbacks homework and save time. 
+ */
 const randomMove = () => {
     const moves = ["rock", "paper", "scissors"]; 
     let rand = (Math.floor(Math.random() * moves.length)); 
