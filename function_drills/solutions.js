@@ -1,6 +1,6 @@
 // Written Questions 
 // 1. What is the difference between a parameter and an argument?
-// The parameter is a variable input that can be passed into a function when it is first declared.
+// The parameter is the variable name that is listed in the function's declaration.
 // The argument is what's passed into a function as a parameter. 
 
 // 2. Within a function, what's the difference between return and console.log?
@@ -34,12 +34,11 @@ const sumArray = (arr) => {
 // Prime Numbers
 // Step One
 /* I couldn't figure out the conditional statement required to compare 
-whether the passed-in number is only evenly divisible by 1 AND itself. 
+whether the passed-in number is only evenly divisible by 1 and itself. 
 */
 const checkPrime = (n) => {
     let squareN = Math.sqrt(n);
     // console.log(squareN); 
-
     for (let k = 1 ; k <= squareN ; k ++) {
         if ( (n % k) !== 0  ) {
             return false;
@@ -47,16 +46,14 @@ const checkPrime = (n) => {
     }
     return true; 
 };
-
 // console.log(checkPrime(25)); 
-
 
 // Rock Paper Scissors 
 /* I couldn't figure out the rest of the chained if-else conditions to compare 
  every possible winning situation of the computer vs. user moves possibilities 
  in the rockPaperScissors() function, but I have a very good understanding of the
  logic that would've been required to complete the problem.
- I had to move on to the Array Methods & Callbacks homework and save time. 
+ I had to move on to the Array Methods & Callbacks assignment. 
  */
 const randomMove = () => {
     const moves = ["rock", "paper", "scissors"]; 
